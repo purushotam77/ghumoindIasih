@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghumo INDIA PROTO</title>
+    <link rel="shortcut icon" href="image/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ---------------- NAVBAR--------------- -->
+    <nav id="navbar">
+        <!-- LOGO------------------------------------ -->
+        <div class="logo">
+            <span class="ghumo">घूमो </span> <span class="i">I</span><span class="ndia">ndia</span>
+
+        </div>
+        <!-- middle navs------------------------------------- -->
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#explore">Explore</a></li>
+            <!-- <li><a href="#">Emergency SOS</a></li> -->
+            <img src="image/emer-removebg-preview.png" alt="" class="emer">
+        </ul>
+        <!-- join btn------------------------------ -->
+        <div class="join">
+            <!-- <img src="image/emer-removebg-preview.png" alt="" class="emer"> -->
+
+            <i class="fa-solid fa-magnifying-glass icon"></i>
+            <button id="joinBtn">Join</button>
+            <i class="fa-solid fa-user icon"></i>
+
+            <!-- dropdown------------- -->
+            <div class="dropdown">
+                <a href="image/sign-in-and-sign-up-form-template/login.html" target="_blank">Register as a Host</a>
+                <a href="image/user/sign-in-and-sign-up-form-template/login.html" target="_blanks"> Register as a User</a>
+            </div>
+        </div>
+        <!-- hamburger-- resposive -------------- -->
+        <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+    <!-- slide menu responsive ---------------------------- -->
+    <div class="side-menu" id="sideMenu">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Video</a></li>
+            <li><a href="#">Why Choose</a></li>
+            <li><a href="#">Rating</a></li>
+        </ul>
+    </div>
+    <!-- ----------SECOND SECTION BACKGROUNG VIDEO----- -->
+    <div class="video-container">
+        <video autoplay muted loop playsinline class="background-video">
+            <source src="image/video/Cultural Tourism(1080P_HD).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <!-- most popular destination thirdslide----------------------------- -->
+
+    <div id="popular">
+        <h1 class="title">Most Preferable Destinations</h1>
+        <div class="slider">
+            
+            
+            <div class="item">
+                <img src="image/jharkhand.jpg" alt="pic no load" class="pic">
+                <div class="overlay">
+                    <div class="text">Jharkhand</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/haridwar.jpg" alt="pic no load" class="pic">
+                <div class="overlay">
+                    <div class="text">Uthrakhand</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/hyderabad.jpg" alt="pic no load" class="pic">
+                <div class="overlay">
+                    <div class="text">Hydrabad</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/lotus.jpg" alt="pic no load" class="pic">
+                <div class="overlay">
+                    <div class="text">Delhi</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/jaipur.jpeg" alt="pic no load" class="pic">
+                <div class="overlay">
+                    <div class="text">Mumbai</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/kolkat.jpg" alt="pic no load" class="pic">
+                <div class="overlay">
+                    <div class="text">Kolkata</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/Vishwa-Shanti-Stupa-Rajgir.jpg" alt="pic no load" class="pic">
+                <div class="overlay">
+                    <div class="text">Bihar</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/Banglore.jpeg.jpg" alt="pic no load" class="pic">
+                <div class="overlay">
+                    <div class="text">Banglore</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/goa.jpg" alt="pic no load" class="pic">
+                <div class="overlay">
+                    <div class="text">Goa</div>
+                </div>
+            </div>
+
+            <button id="next">></button>
+            <button id="prev">
+                < </button>
+        </div>
+
+    </div>
+    <!-- ---------------------------EXPLORE DESTINATION--------------- -->
+    <div id="explore">
+        <h1 class="title-2">EXPLORE Destinations..</h1>
+        <!-- searchbar ------------------------------- -->
+        <div class="forms">
+            <form action="">
+                <input type="text" placeholder="Search Destination">
+                <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+            </form>
+        </div>
+        <!-- Map embed api------------------------------------------------ -->
+        <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d921063.9527873497!2d85.14304295!3d25.608037449999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1726498095689!5m2!1sen!2sin"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+    </div>
+    <!-- our services---------------------------------------- -->
+    <div id="services">
+        <!-- main heding------------------------- -->
+        <h1 class="title-3">OUR SERVICES..</h1>
+        <div class="card-container">
+            <div class="card">
+                <img src="image/houses.jpg" alt="Image">
+                <div class="overlay-1">
+                    <h3>Paint Houses</h3>
+                    <p>Local paint houses here.</p>
+                    <a href="#" class="link">BOOK NOW</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image/fooodo.jpg" alt="Image">
+                <div class="overlay-1">
+                    <h3>FOOD</h3>
+                    <p>Lcal Food here.</p>
+                    <a href="#" class="link">BOOK NOW</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image/rideeee.jpeg" alt="Image">
+                <div class="overlay-1">
+                    <h3>Ride</h3>
+                    <p>Book Local Ride here.</p>
+                    <a href="#" class="link">BOOK NOW</a>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <!-- --------galery------ -->
+
+    <h1 class="title-3"> Our Gallery</h1>
+    <div id="Gallery">
+
+        <div class="gallery-container">
+            <div class="gallery-box" id="box1">
+                <img src="image/red fort delhi.jpeg.jpg" alt="Image 1">
+                <div class="overlay-2 top-overlay-2">
+                    <h2>Delhi Tourist Gallery</h2>
+                    <button class="pulse-btn">See More</button>
+                </div>
+            </div>
+            <div class="gallery-box" id="box2">
+                <img src="image/Jaipur1.jpg" alt="Image 2">
+                <div class="overlay-2 right-overlay-2">
+                    <h2>Jaipur Tourist Gallery</h2>
+                    <button class="pulse-btn">See More</button>
+                </div>
+            </div>
+            <div class="gallery-box" id="box3">
+                <img src="image/mumbai bich.jpg.crdownload" alt="Image 3">
+                <div class="overlay-2 left-overlay=2">
+                    <h2>Mumbai Tourist Gallery</h2>
+                    <button class="pulse-btn">See More</button>
+                </div>
+            </div>
+            <div class="gallery-box" id="box4">
+                <img src="image/statue.jpg" alt="Image 4">
+                <div class="overlay-2 bottom-overlay-2">
+                    <h2>Gujrat Tourist Gallery</h2>
+                    <button class="pulse-btn">See More</button>
+                </div>
+            </div>
+            <div class="gallery-box" id="box5">
+                <img src="image/him.jpg" alt="Image 5">
+                <div class="overlay-2 spin-overlay-2">
+                    <h2>Simla & Manali Gallery</h2>
+                    <button class="pulse-btn">See More</button>
+                </div>
+            </div>
+            <div class="gallery-box" id="box6">
+                <img src="image/up.avif" alt="Image 6">
+                <div class="overlay-2 fade-overlay-2">
+                    <h2> Vanaras Tourist Gallery</h2>
+                    <button class="pulse-btn">See More</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- --------------------------Review&rating -------------------- -->
+    <div id="review">
+        <h1 class="title-4">Review & Rating</h1>
+        <!-- rating--------------- -->
+        <div class="mainrate">
+
+            <div class="rating-stars">
+                <input type="radio" name="rating" id="rs0"><label for="rs0"></label>
+                <input type="radio" name="rating" id="rs1"><label for="rs1"></label>
+                <input type="radio" name="rating" id="rs2"><label for="rs2"></label>
+                <input type="radio" name="rating" id="rs3" checked><label for="rs3"></label>
+                <input type="radio" name="rating" id="rs4"><label for="rs4"></label>
+                <input type="radio" name="rating" id="rs5"><label for="rs5"></label>
+                <span class="number"></span>
+            </div>
+            <!-- Review------------------- -->
+            <div class="wr">
+                <form action="">
+                    <textarea name="review" id="reviewss" cols="60" rows="8"></textarea>
+                    <button class="submit-55">Submit</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ------Faq---------------------------- -->
+    <div id="faq">
+        <!-- FAQ Section -->
+        <section class="faq" id="faq">
+            <div class="container">
+                <h2 style="color: azure;">Frequently Asked Questions (FAQ)</h2>
+
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <h3 class="faq-question">How is the safety and security of local stays ensured?</h3>
+                    <p class="faq-answer">We verify all local hosts through a rigorous process and provide reviews and
+                        ratings from previous guests. Additionally, our platform offers 24/7 customer support to handle
+                        any issues that may arise.</p>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <h3 class="faq-question">What is the refund policy in case of cancellations?</h3>
+                    <p class="faq-answer">Our platform offers a flexible refund policy depending on the cancellation
+                        time frame. You can view the detailed policy in the booking section or contact our support team
+                        for more information.</p>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <h3 class="faq-question">How are prices for stays, food, and rentals set?</h3>
+                    <p class="faq-answer">Prices are set by the local hosts based on market rates and the services
+                        offered. The platform ensures transparency by displaying all costs upfront, with no hidden
+                        charges.</p>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <h3 class="faq-question">What is the process to register as a service provider?</h3>
+                    <p class="faq-answer">To register, simply sign up on our platform, complete the verification
+                        process, and create your listing. Our team will guide you through each step to ensure a smooth
+                        registration process.</p>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item">
+                    <h3 class="faq-question">Are there any partnerships with local tourism boards or organizations?</h3>
+                    <p class="faq-answer">Yes, we collaborate with local tourism boards and organizations to promote
+                        sustainable tourism and enhance the travel experience for both tourists and locals.</p>
+                </div>
+
+
+            </div>
+        </section>
+    </div>
+    <!-- -------------Any Query---------- -->
+    <div id="contactus">
+        <div class="iconn">
+            <p>Our Social Media Handels</p>
+            <a href="https://www.facebook.com/purushottam.raj.902819"><i class="fa-brands fa-facebook ic"></i></a>
+            <a
+                href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.instagram.com/&ved=2ahUKEwiL6Zr2-LGEAxUuumMGHfwzBxsQFnoECAgQAQ&usg=AOvVaw1cBeRoOpMhZ3-x5M1sA3Fm"><i
+                    class="fa-brands fa-instagram ic"></i></a>
+            <a
+                href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://twitter.com/%3Flang%3Den&ved=2ahUKEwjtm6Pi-LGEAxXoxjgGHSjUBo0QFnoECAcQAQ&usg=AOvVaw1Sd3B-_cNZOLSmhw9z2lOm"><i
+                    class="fa-brands fa-twitter ic"></i></a>
+            <a
+                href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://in.linkedin.com/&ved=2ahUKEwi1jfeP-bGEAxXNwzgGHdyqCNoQFnoECAcQAQ&usg=AOvVaw1HyOXdC-jXyHRjrwaB7Mnw"><i
+                    class="fa-brands fa-linkedin ic"></i></a>
+            <a href="https://github.com/purushotam77"><i class="fa-brands fa-github ic"></i></a>
+            <a href="https://wa.link/8j5ugq"><i class="fa-brands fa-whatsapp ic"></i></a>
+
+        </div>
+        <div class="formmm">
+            <h3>For Any Query</h3>
+
+            <form action="">
+                <input type="text" name="text" placeholder="Name" class="namee"
+                    style="border-radius: 6px; width: 100%; text-align: center; right: 30px;  margin-top: 3px; text-align: center; background-color: #eee4e4;">
+                <input type="email" name="email" id="email" placeholder=" Write E-mail" class="email"
+                    style="border-radius: 6px; width: 100%; text-align: center;  margin-top: 3px;background-color: #eee4e4; padding-right: 25px;">
+                <input type="text" name="num" id="num" placeholder="Mobile No" class="mobile"
+                    style="border-radius: 6px; width: 100%; text-align: center; right: 30px; margin-top: 3px; text-align: center; background-color: #eee4e4;">
+                <textarea name="query" id="query" cols="30" rows="10" placeholder="Write Your Query" class="query"
+                    style="border-radius: 6px; width: 100%; text-align: center; right: 30px; margin-top: 3px; text-align: center; background-color: #eee4e4;"></textarea>
+                <button type="submit" class="Done"
+
+                    >Submit</button>
+            </form>
+        </div>
+        <a href="#navbar" class="top">Back on Top</a>
+    </div>
+
+
+    <!-- ------------------footer------------------ -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Us</h3>
+                <p>We aim to develop an Android and web-based application that allows users to plan their entire trip
+                    seamlessly on a single platform like local culture , language , food and local behaviour.</p>
+            </div>
+            <div class="footer-address">
+                <h3>Contact Us</h3>
+                <p>Chak Sikandar,Hajipur <br>
+                    </p>
+                <p>Email: purusho2@.com</p>
+                <p>Phone: +91 7700803184</p>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Purushotam Webd. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+<script src="script.js"></script>
+
+</html>
